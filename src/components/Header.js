@@ -24,13 +24,11 @@ class Header extends React.Component {
                   <div className="nav">
                     <ul>
                       <li>
-                        <Link to="/home">Home</Link>
-                        <Link to="/resume">Resume</Link>
-                        <a href="#">ABOUT</a>
-                        <a href="#">SERVICE</a>
-                        <a href="#">WORKS</a>
-                        <a href="#">BLOG</a>
-                        <a href="#">CONTACTS</a>
+                        <Link to="/home">Home</Link>                       
+                        <Link to="/about">About</Link>
+                        <Link to="/skill">Skill</Link>
+                        <Link to="/recent">Recent</Link>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>

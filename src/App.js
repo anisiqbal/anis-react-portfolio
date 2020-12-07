@@ -2,7 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import Resume from './components/Resume';
+import About from './components/About';
+import Contact from './components/Contact';
+import Recent from './components/Recent';
+import Skill from './components/Skill';
+import Slider from './components/Slider';
+
+
+
 
 import React from "react";
 import {
@@ -22,7 +29,14 @@ function App() {
      <Switch>
       <Route exact path='/' component={Home}></Route>
       <Route exact path='/home' component={Home}></Route>
-      <Route exact path='/resume' component={Resume}></Route>
+      <Route exact path='/about' component={About}></Route>
+      <Route exact path='/contact' component={Contact}></Route>
+      <Route exact path='/recent' component={Recent}></Route>
+      <Route exact path='/skill' component={Skill}></Route>
+      <Route exact path='/slider' component={Slider}></Route>
+      
+      
+
      </Switch>
          
     </Router>
