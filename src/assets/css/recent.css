@@ -1,0 +1,50 @@
+.recent{
+    padding: 5% 5%;
+    background-color: #0c0927;
+    text-align: center;
+    color: white;
+}
+
+.recent h3{
+    
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.recent p{
+    
+    font-size: 13px;
+    
+}
+
+.recent .work{
+    
+}
+
+.recent .work .images{
+    margin-top: 5%;
+}
+
+.recent .images img{
+    width: 100%;
+    height: 200px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.recent .press{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.recent .press a{
+    font-size: 17px;
+    border-radius: 19px;
+    background-color: #e8a808;
+    color: #fdf9f0;
+    text-decoration: none !important;
+    padding: 10px 20px;
+}
+
+
+

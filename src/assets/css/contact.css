@@ -1,0 +1,60 @@
+.contact-us {
+    padding: 5%;
+    background-color: #0d1428;
+
+}
+
+.contact-us h5{
+    color: #f0f0f0;
+}
+
+.contact-us h5 span{
+
+    color: #e0b313;
+}
+
+
+.contact-us .contact-info{
+    color: #f0f0f0;
+}
+
+.contact-us .contact-info a{
+    
+}
+
+.contact-us .contact-info i{
+
+    margin-top: 5%;
+    padding-right: 5px;
+}
+
+.contact-us form{
+    box-shadow: 0 0 10px #02040a;
+    padding: 17px;
+
+}
+
+.contact-us .input input{
+    margin-top: 5%;
+    background-color: unset;
+}
+
+.contact-us .hold{
+
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contact-us .hold a{
+
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #efb708;
+    padding: 5px 13px;
+    text-decoration: none;
+    color: #fdf9f0;
+}
+
+
+
+

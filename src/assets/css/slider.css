@@ -1,0 +1,64 @@
+.slider{
+
+    padding: 5% 0;
+    background-color: #101126;
+}
+.slider h6{
+    
+    color:#e2aa0e;
+
+}
+
+.slider h4{
+    color:#ffffff;
+
+}
+
+.slider p{
+    color:#fff;
+}
+
+.slider a.hire-me{
+    
+    border-radius: 300px;
+    background-color: gold;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0px 10px;
+    text-decoration: none !important;
+
+}
+
+.slider .profile{
+
+    padding-left: 11%;
+}
+
+.slider .profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+    padding: 0px 10px 0px 0px;
+}
+
+.slider .socials {
+
+}
+
+.slider .socials a{
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+    color: wheat !important;
+}
+
+.slider .socials i {
+    padding: 6px;
+    color: cornsilk;
+}
+
+
+
+
+

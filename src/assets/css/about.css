@@ -1,0 +1,45 @@
+.about{
+
+    
+    padding: 5% 14%;
+    background: #171028;
+
+}
+.about .image img{
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+}
+
+.about h4{
+    color: #edbf19;
+    padding-bottom: 5px;
+}
+
+.about h5{
+    color: #cba116
+}
+
+.about p{
+    padding: 15px 0px;
+    color: #e8e8e8;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.about a{
+    padding: 7px 6px;
+    text-decoration: none !important;
+    color: #f7f4d6;
+    background-color: #4a4c82;
+    border-radius: 300px;
+}
+
+.about a:hover{
+    color: #f7f4d6;
+}
+

@@ -1,0 +1,38 @@
+.skill {
+    padding: 5% 0;
+    text-align: center;
+    background-color:#0f0f28;
+}
+
+.skill h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: wheat;
+}
+
+.skill .area{
+
+}
+
+.skill .area .iner{
+    margin-top: 10%;
+    box-shadow: 2px 2px 15px #3a3333;
+    border-radius: 5px;
+    padding: 5% 5%;
+    color: burlywood;
+}
+
+.skill .iner h6{
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.skill .iner  p{
+    font-size: 12px;
+    color: gray;
+    padding-top: 5px;
+}
+
+
+
