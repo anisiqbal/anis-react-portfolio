@@ -29,6 +29,8 @@ class Header extends React.Component {
                         <Link to="/skill">Skill</Link>
                         <Link to="/recent">Recent</Link>
                         <Link to="/contact">Contact</Link>
+                        <Link to="/admin">Admin</Link>
+
                       </li>
                     </ul>
                   </div>

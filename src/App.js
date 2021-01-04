@@ -7,9 +7,7 @@ import Contact from './components/Contact';
 import Recent from './components/Recent';
 import Skill from './components/Skill';
 import Slider from './components/Slider';
-
-
-
+import Admin from './components/Admin';
 
 import React from "react";
 import {
@@ -34,6 +32,7 @@ function App() {
       <Route exact path='/recent' component={Recent}></Route>
       <Route exact path='/skill' component={Skill}></Route>
       <Route exact path='/slider' component={Slider}></Route>
+      <Route exact path='/admin' component={Admin}></Route>
       
       
 

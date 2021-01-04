@@ -5,6 +5,7 @@ import About from './About';
 import Skill from './Skill';
 import Recent from './Recent';
 import Contact from './Contact';
+import Update from './Update';
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
         <Skill/>
         <Recent/>
         <Contact/>
+        <Update/>
       </div>
     );
   }
