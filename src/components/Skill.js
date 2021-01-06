@@ -1,7 +1,25 @@
 import React, {Component} from 'react';
 import '../assets/css/skill.css';
 
+import axios from 'axios';
+
+
 class Skill extends React.Component{
+
+    constructor(props){
+        super(props)
+        this.state = {
+            data
+        }
+    }
+
+    componentDidMount(){
+
+    }
+
+    getSkill(){
+
+    }
     render(){
         return(
             <div className="skill">

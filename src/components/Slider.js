@@ -22,7 +22,7 @@ class Slider extends React.Component{
     getSlider() {
         axios.get('https://5ff2e0c528c3980017b18bf0.mockapi.io/api/sliders').then(res => {
             this.setState({ data: res.data[0] });
-            console.log(this.state.data);
+            // console.log(this.state.data);
         })
     }
 
