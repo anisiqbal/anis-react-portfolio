@@ -9,17 +9,21 @@ class Skill extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            data
+            data:''
         }
     }
 
     componentDidMount(){
-
+       this.getSkill();
     }
 
     getSkill(){
-
+        axios.get('https://5ff2e0c528c3980017b18bf0.mockapi.io/api/skill').then (res =>{
+            this.setState({data:res.data});
+            // console.log('skill', this.state.data);
+        })
     }
+
     render(){
         return(
             <div className="skill">
@@ -31,34 +35,18 @@ class Skill extends React.Component{
 
                        <div className="col-12 col-md-12 col-lg-12">
                            <div className="area row">
-                                <div className="col-3 col-md-3 col-lg-3">
-                                    <div className="iner">
-                                        <h6> UI/UX DESIGN</h6>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
-                                    </div>
-                                </div>
-
-                                <div className="col-3 col-md-3 col-lg-3">
-                                <div className="iner">
-                                        <h6> GRAPHIC DESIGN</h6>
-                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32</p>
-                                    </div>
-                                </div>
-
-                                <div className="col-3 col-md-3 col-lg-3">
-                                <div className="iner">
-                                        <h6> WEB DEVELOPMENT</h6>
-                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from.</p>
-                                    </div>
-                                </div>
-
-                                <div className="col-3 col-md-3 col-lg-3">
-                                <div className="iner">
-                                        <h6>SEO & REASEARCH</h6>
-                                        <p>Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.</p>
-                                    </div>
-                                </div>
-
+                                {
+                                    this.state.data && this.state.data.map((value, index)=>{
+                                        return(
+                                            <div className="col-3 col-md-3 col-lg-3" key={index}>
+                                                <div className="iner">
+                                                    <h6>{value.heading}</h6>
+                                                    <p>{value.description}</p>
+                                                </div>
+                                            </div>
+                                        )
+                                    })
+                                }
                            </div>
                        </div>
 

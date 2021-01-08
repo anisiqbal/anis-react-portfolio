@@ -22,7 +22,7 @@ class About extends React.Component{
     getAbout(){
         axios.get('https://5ff2e0c528c3980017b18bf0.mockapi.io/api/About').then(res => {
             this.setState({data: res.data[0] });
-            console.log('about', this.state.data);
+            // console.log('about', this.state.data);
         })
     }
 

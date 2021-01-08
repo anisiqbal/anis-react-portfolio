@@ -4,8 +4,28 @@ import image from '../assets/img/image.png';
 import photo from '../assets/img/image.01.png';
 import pic from '../assets/img/code.png';
 
+import axios from 'axios';
+
 
 class Recent extends React.Component{
+
+    constructor(props){
+        super(props)
+        this.state = {
+            data:''
+        }
+    }
+
+    componentDidMount(){
+       this.getRecent();
+    }
+
+    getRecent(){
+        axios.get('https://5ff2e0c528c3980017b18bf0.mockapi.io/api/recent').then(res=>{
+            this.setState({data: res.data});
+            console.log('recent', this.state.data);
+        })
+           }
     render(){
         return(
 
@@ -19,24 +39,20 @@ class Recent extends React.Component{
                         
                         <div className="col-12 col-md-12 col-lg-12" >
                             <div className="work row">
-                                <div className="col-4 col-md-4 col-lg-4">
-                                    <div className="images">
-                                        <img src={image}></img>  
+                            {
+                                this.state.data && this.state.data.map((value,index)=>{
+                                    return(
+                                        <div className="col-4 col-md-4 col-lg-4" key={index}> 
+                                        <div className="images">
+                                            <img src={value.image}></img> 
+                                            <p>{value.heading}</p> 
+    
+                                      </div>
+                                    </div>
+                                    )
+                                })
+                            }
 
-                                  </div>
-                                </div>
-                            
-                                <div className="col-4 col-md-4 col-lg-4">
-                                    <div className="images">
-                                        <img src={photo}></img> 
-                                  </div>
-                                </div>
-
-                                <div className="col-4 col-md-4 col-lg-4">
-                                    <div className="images">
-                                        <img src={pic}></img>                                      
-                                </div>
-                              </div>                                                       
                             </div>                             
                         </div>
 
