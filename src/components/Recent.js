@@ -60,8 +60,7 @@ class Recent extends React.Component{
                             <div className="press">
                                 <a href="#">View All</a>   
                             </div>
-                        </div>
-                            
+                        </div>  
 
                     </div>
                 </div>
