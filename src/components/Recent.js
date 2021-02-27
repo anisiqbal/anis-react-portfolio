@@ -25,7 +25,8 @@ class Recent extends React.Component{
             this.setState({data: res.data});
             console.log('recent', this.state.data);
         })
-           }
+    }
+    
     render(){
         return(
 
